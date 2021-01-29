@@ -11,6 +11,10 @@
   --secondary-bgc: #f5f4fa;
   --accent-bgc: #2f303a;
   --header-bgc: #ffffff;
+  --bgc: #2196f3;
+
+  --checkbox-color: #212121;
+  --icon-link: #afb1b8;
 }
 
 body {
@@ -92,7 +96,7 @@ ul {
   color: var(--accent-text-color);
 }
 .logo-studio {
-  color: black;
+  color: var(--main-text-color);
 }
 
 .nav-links {
@@ -171,7 +175,7 @@ ul {
   margin-right: 50px;
 }
 
-.page-header {
+.portfolio-header {
   border-bottom: 1px solid #ececec;
   display: block;
 }
@@ -231,9 +235,9 @@ ul {
 }
 
 .button {
-  background-color: var(--accent-text-color);
+  background-color: var(--button-bgc);
   color: var(--bgc-accent-text-color);
-  border-color: #2196f3;
+  border-color: var(--button-bgc);
   font-family: inherit;
   font-style: normal;
   font: weight 700;
@@ -247,7 +251,7 @@ ul {
   padding-right: 32px;
   padding-bottom: 10px;
   padding-left: 32px;
-  outline-color: #2196f3;
+  outline-color: var(--bgc);
   cursor: pointer;
 }
 
@@ -288,7 +292,7 @@ ul {
 }
 
 .icon-conteiner {
-  background: #f5f4fa;
+  background: var(--secondary-bgc);
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -335,7 +339,6 @@ ul {
 .product-actions > .example {
   position: absolute;
 
-  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -343,7 +346,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--bgc-accent-text-color);
 
   padding: 27px 0;
 
@@ -449,7 +452,7 @@ h3 {
   width: 270px;
   margin-left: auto;
   margin-right: auto;
-  background: #ffffff;
+  background: var(--bgc-accent-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -478,14 +481,14 @@ h3 {
   align-items: center;
   background-position: center;
   justify-content: center;
-  color: #afb1b8;
+  color: var(--icon-link);
   margin-right: 10px;
 }
 
 .icon-link:hover,
 .icon-link:focus {
   background-color: var(--accent-text-color);
-  color: #ffffff;
+  color: var(--bgc-accent-text-color);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -526,10 +529,10 @@ h3 {
   align-items: center;
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-link);
   border-radius: 4px;
 
-  fill: #afb1b8;
+  fill: var(--icon-link);
 }
 
 .client-link:hover,
@@ -621,7 +624,7 @@ h3 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--bgc-accent-text-color);
   margin-bottom: 20px;
 }
 
@@ -632,7 +635,7 @@ h3 {
 
 .icon-join {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  color: var(--bgc-accent-text-color);
 }
 
 .conteiner-sign {
@@ -650,7 +653,7 @@ h3 {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background: #2f303a;
+  background: var(--accent-bgc);
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -663,7 +666,7 @@ h3 {
 }
 
 .button-futter {
-  background: #2196f3;
+  background: var(--bgc);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding-top: 10px;
@@ -671,8 +674,8 @@ h3 {
   padding-left: 29px;
   padding-right: 62px;
   cursor: pointer;
-  border-color: #2196f3;
-  outline-color: #2196f3;
+  border-color: var(--bgc);
+  outline-color: var(--bgc);
 }
 
 .imput {
@@ -690,7 +693,7 @@ h3 {
   top: 0;
 
   transform: translateY(50%);
-  fill: #fff;
+  fill: var(--bgc-accent-text-color);
 }
 
 .sign {
@@ -699,7 +702,7 @@ h3 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  color: #ffffff;
+  color: var(--bgc-accent-text-color);
 }
 
 .form {
@@ -735,14 +738,13 @@ h3 {
   padding-bottom: 8px;
   border-radius: 4px;
 
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-text-color);
   border-style: none;
 }
 
@@ -763,7 +765,6 @@ h3 {
 }
 
 .title {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -854,7 +855,7 @@ h3 {
 }
 
 .overlay > p {
-  color: #fff;
+  color: var(--bgc-accent-text-color);
   font-size: 18px;
 }
 
@@ -879,7 +880,7 @@ h3 {
   left: 50%;
   width: 528px;
   height: 581px;
-  background-color: #ffff;
+  background-color: var(--bgc-accent-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -902,14 +903,14 @@ h3 {
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background: #ffff;
+  background: var(--bgc-accent-text-color);
   cursor: pointer;
   outline: none;
 }
 
 .close-icon:focus,
 .close-icon:hover {
-  fill: #2196f3;
+  fill: var(--bgc);
 }
 
 .modal-text {
@@ -924,7 +925,7 @@ h3 {
 
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--main-text-color);
 }
 
 .form-conteiner {
@@ -965,12 +966,12 @@ h3 {
 }
 
 .imput-modal:focus {
-  border-color: #2196f3;
+  border-color: var(--bgc);
   outline: none;
 }
 
 .imput-modal:focus + .icon-modal {
-  fill: #2196f3;
+  fill: var(--bgc);
 }
 
 .textarea {
@@ -988,7 +989,6 @@ h3 {
 }
 
 .textarea::placeholder {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 400px;
   font-size: 12px;
@@ -999,7 +999,7 @@ h3 {
 }
 
 .textarea:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--bgc);
   border-radius: 4px;
   outline: none;
 }
@@ -1014,7 +1014,7 @@ h3 {
 .checkbox-icon {
   width: 15px;
   height: 15px;
-  border: 2px solid black;
+  border: 2px solid var(--checkbox-color);
   border-radius: 2px;
   cursor: pointer;
   display: inline-block;
@@ -1034,7 +1034,7 @@ h3 {
   background-image: url(../img/Vector1.svg);
   background-size: contain;
   background-origin: border-box;
-  fill: #fff;
+  fill: var(--bgc-accent-text-color);
   width: 15px;
   height: 15px;
   background-repeat: no-repeat;
@@ -1051,10 +1051,10 @@ h3 {
 
 .button-submit {
   padding: 10px 55px;
-  background: #2196f3;
+  background: var(--bgc);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: #2196f3;
+  border-color: var(--bgc);
   outline-color: var(--main-bgc);
   cursor: pointer;
 }
@@ -1067,7 +1067,7 @@ h3 {
 
   letter-spacing: 0.01em;
 
-  color: #757575;
+  color: var(--secondary-text-color);
   margin-bottom: 4px;
 }
 
