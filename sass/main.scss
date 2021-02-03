@@ -1,63 +1,7 @@
-:root {
-    /*колір тексту*/
-    --main-text-color: #212121;
-    --secondary-text-color: #757575;
-    --accent-text-color: #2196f3;
-    --bgc-accent-text-color: #ffffff;
-    --footer-addressbox-text-color: rgba(255, 255, 255, 0.6);
-    /*колір фону*/
-    --button-bgc: #2196f3;
-    --main-bgc: #e5e5e5;
-    --secondary-bgc: #f5f4fa;
-    --accent-bgc: #2f303a;
-    --header-bgc: #ffffff;
-    --bgc: #2196f3;
+@import 'utils/veriables.scss';
+@import'base/defaults.scss';
   
-    --checkbox-color: #212121;
-    --icon-link: #afb1b8;
-  }
-  
-  body {
-    background-color: var(--header-bgc);
-    color: var(--main-text-color);
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-transform: none;
-    margin: 0;
-  }
-  
-  /*--------------------------------------Скрить заголовки h2 і h1-----------------------------------*/
-  .visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-  }
-  /*--------------------------------------------Общі значення----------------------------------*/
-  li {
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  h1,
-  h2,
-  h3,
-  p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+ 
   
   /*--------------------------------------header----------------------------------------------*/
   .conteiner {
@@ -82,7 +26,7 @@
   }
   
   .logo-header {
-    font-family: "Raleway";
+    font-family:$sec-fond-famele;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -93,10 +37,10 @@
     margin-left: 0px;
   }
   .logo-web {
-    color: var(--accent-text-color);
+    color: $accent-text-color;
   }
   .logo-studio {
-    color: var(--main-text-color);
+    color: $main-text-color;
   }
   
   .nav-links {
@@ -108,11 +52,11 @@
   }
   
   .site-nav.link-header.current {
-    color: var(--accent-text-color);
+    color: $accent-text-color;
   }
   
   .link-header {
-    color: var(--main-text-color);
+    color: $main-text-color;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -124,11 +68,11 @@
   
   .link-header:hover,
   .link-header:focus {
-    color: var(--accent-text-color);
+    color: $accent-text-color;
   }
   
   .link-contacts {
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -147,7 +91,7 @@
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: var(--button-bgc);
+    background-color: $button-bgc;
     opacity: 0;
   
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -159,12 +103,12 @@
   
   .link-contacts:hover,
   .link-contacts:focus {
-    color: var(--accent-text-color);
+    color: $accent-text-color;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .link-header.current {
-    color: var(--accent-text-color);
+    color: $accent-text-color;
   }
   
   .contacts {
@@ -202,7 +146,7 @@
   }
   
   .hero {
-    background: var(--accent-bgc);
+    background: $accent-bgc;
     padding: 0;
   }
   .hero .hero-conteiner {
@@ -224,7 +168,7 @@
   }
   
   .hero-main {
-    color: var(--bgc-accent-text-color);
+    color: $bgc-accent-text-color;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -235,9 +179,9 @@
   }
   
   .button {
-    background-color: var(--button-bgc);
-    color: var(--bgc-accent-text-color);
-    border-color: var(--button-bgc);
+    background-color: $button-bgc;
+    color: $bgc-accent-text-color;
+    border-color: $button-bgc;
     font-family: inherit;
     font-style: normal;
     font: weight 700;
@@ -251,7 +195,7 @@
     padding-right: 32px;
     padding-bottom: 10px;
     padding-left: 32px;
-    outline-color: var(--bgc);
+    outline-color: $bgc;
     cursor: pointer;
   }
   
@@ -292,7 +236,7 @@
   }
   
   .icon-conteiner {
-    background: var(--secondary-bgc);
+    background: $secondary-bgc;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -307,7 +251,7 @@
   }
   
   .work {
-    color: var(--main-text-color);
+    color: $main-text-color;
     text-align: center;
     font-style: normal;
     font-weight: 700;
@@ -346,7 +290,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--bgc-accent-text-color);
+    color: $bgc-accent-text-color;
   
     padding: 27px 0;
   
@@ -366,12 +310,12 @@
   
   /*------------------------------------------команда-------------------------------------*/
   .team {
-    background: var(--secondary-bgc);
+    background: $secondary-bgc;
     padding-top: 94px;
     padding-bottom: 94px;
   }
   .our-team {
-    color: var(--main-text-color);
+    color: $main-text-color;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -381,7 +325,7 @@
   }
   
   h3 {
-    color: var(--main-text-color);
+    color: $main-text-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -390,7 +334,7 @@
   }
   
   .text {
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -452,7 +396,7 @@
     width: 270px;
     margin-left: auto;
     margin-right: auto;
-    background: var(--bgc-accent-text-color);
+    background: $bgc-accent-text-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -481,14 +425,14 @@
     align-items: center;
     background-position: center;
     justify-content: center;
-    color: var(--icon-link);
+    color: $icon-link;
     margin-right: 10px;
   }
   
   .icon-link:hover,
   .icon-link:focus {
-    background-color: var(--accent-text-color);
-    color: var(--bgc-accent-text-color);
+    background-color: $accent-text-color;
+    color: $bgc-accent-text-color;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
@@ -529,27 +473,27 @@
     align-items: center;
     width: 170px;
     height: 90px;
-    border: 1px solid var(--icon-link);
+    border: 1px solid $icon-link;
     border-radius: 4px;
   
-    fill: var(--icon-link);
+    fill: $icon-link;
   }
   
   .client-link:hover,
   .logotype:hover,
   .client-link:focus,
   .logotype:focus {
-    border-color: 1px solid var(--button-bgc);
-    color: var(--button-bgc);
+    border-color: 1px solid $button-bgc;
+    color: $button-bgc;
     outline: none;
-    fill: var(--button-bgc);
+    fill: $button-bgc;
   
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   /*-------------------------------Footer------------------------------------*/
   .footer {
-    background-color: var(--accent-bgc);
+    background-color: $accent-bgc;
     font-size: 14px;
     line-height: 1.7;
     padding-top: 60px;
@@ -561,11 +505,11 @@
   }
   
   .logo {
-    color: var(--bgc-accent-text-color);
+    color: $bgc-accent-text-color;
   }
   
   .logo-footer {
-    font-family: "Raleway";
+    font-family: $sec-fond-famele;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -575,7 +519,7 @@
   }
   
   .address {
-    color: var(--bgc-accent-text-color);
+    color: $bgc-accent-text-color;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -591,7 +535,7 @@
   }
   
   .link-footer {
-    color: var(--footer-addressbox-text-color);
+    color: $footer-addressbox-text-color;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -624,7 +568,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--bgc-accent-text-color);
+    color: $bgc-accent-text-color;
     margin-bottom: 20px;
   }
   
@@ -635,7 +579,7 @@
   
   .icon-join {
     background-color: rgba(255, 255, 255, 0.1);
-    color: var(--bgc-accent-text-color);
+    color: $bgc-accent-text-color;
   }
   
   .conteiner-sign {
@@ -653,20 +597,20 @@
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background: var(--accent-bgc);
+    background: $accent-bgc;
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    color: var(--bgc-accent-text-color);
+    color: $bgc-accent-text-color;
   }
   
   .imput-text:focus {
     outline: none;
-    border-color: var(--button-bgc);
+    border-color: $button-bgc;
   }
   
   .button-futter {
-    background: var(--bgc);
+    background: $bgc;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding-top: 10px;
@@ -674,8 +618,8 @@
     padding-left: 29px;
     padding-right: 62px;
     cursor: pointer;
-    border-color: var(--bgc);
-    outline-color: var(--bgc);
+    border-color: $bgc;
+    outline-color: $bgc;
   }
   
   .imput {
@@ -693,7 +637,7 @@
     top: 0;
   
     transform: translateY(50%);
-    fill: var(--bgc-accent-text-color);
+    fill: $bgc-accent-text-color;
   }
   
   .sign {
@@ -702,7 +646,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    color: var(--bgc-accent-text-color);
+    color: $bgc-accent-text-color;
   }
   
   .form {
@@ -744,14 +688,14 @@
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-text-color);
+    color: $main-text-color;
     border-style: none;
   }
   
   .button-portfolio:hover,
   .button-portfolio:focus {
-    color: var(--bgc-accent-text-color);
-    background-color: var(--button-bgc);
+    color: $bgc-accent-text-color;
+    background-color: $button-bgc;
   
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -761,7 +705,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
   }
   
   .title {
@@ -770,7 +714,7 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--main-text-color);
+    color: $main-text-color;
   }
   
   .foto-list {
@@ -823,7 +767,7 @@
   }
   
   .logo-footer {
-    font-family: "Raleway";
+    font-family: $sec-fond-famele;
     font-style: 500;
     font-weight: 700;
     font-size: 26px;
@@ -855,7 +799,7 @@
   }
   
   .overlay > p {
-    color: var(--bgc-accent-text-color);
+    color: $bgc-accent-text-color;
     font-size: 18px;
   }
   
@@ -880,7 +824,7 @@
     left: 50%;
     width: 528px;
     height: 581px;
-    background-color: var(--bgc-accent-text-color);
+    background-color: $bgc-accent-text-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -903,14 +847,14 @@
     height: 30px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background: var(--bgc-accent-text-color);
+    background: $bgc-accent-text-color;
     cursor: pointer;
     outline: none;
   }
   
   .close-icon:focus,
   .close-icon:hover {
-    fill: var(--bgc);
+    fill: $bgc;
   }
   
   .modal-text {
@@ -925,7 +869,7 @@
   
     letter-spacing: 0.03em;
   
-    color: var(--main-text-color);
+    color: $main-text-color;
   }
   
   .form-conteiner {
@@ -966,12 +910,12 @@
   }
   
   .imput-modal:focus {
-    border-color: var(--bgc);
+    border-color: $bgc;
     outline: none;
   }
   
   .imput-modal:focus + .icon-modal {
-    fill: var(--bgc);
+    fill: $bgc;
   }
   
   .textarea {
@@ -999,7 +943,7 @@
   }
   
   .textarea:focus {
-    border: 1px solid var(--bgc);
+    border: 1px solid $bgc;
     border-radius: 4px;
     outline: none;
   }
@@ -1014,7 +958,7 @@
   .checkbox-icon {
     width: 15px;
     height: 15px;
-    border: 2px solid var(--checkbox-color);
+    border: 2px solid $checkbox-color;
     border-radius: 2px;
     cursor: pointer;
     display: inline-block;
@@ -1029,12 +973,12 @@
   }
   
   .old-checkbox:checked + .checkbox-icon {
-    background-color: var(--button-bgc);
-    border-color: var(--button-bgc);
+    background-color: $button-bgc;
+    border-color: $button-bgc;
     background-image: url(../img/Vector1.svg);
     background-size: contain;
     background-origin: border-box;
-    fill: var(--bgc-accent-text-color);
+    fill: $bgc-accent-text-color;
     width: 15px;
     height: 15px;
     background-repeat: no-repeat;
@@ -1051,11 +995,11 @@
   
   .button-submit {
     padding: 10px 55px;
-    background: var(--bgc);
+    background: $bgc;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border-color: var(--bgc);
-    outline-color: var(--main-bgc);
+    border-color: $bgc;
+    outline-color: $main-bgc;
     cursor: pointer;
   }
   
@@ -1067,12 +1011,12 @@
   
     letter-spacing: 0.01em;
   
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     margin-bottom: 4px;
   }
   
   .agreement-link {
     text-decoration-line: underline;
-    color: var(--accent-text-color);
+    color: $accent-text-color;
   }
   
