@@ -39,3 +39,27 @@ body {
     padding: 0;
     list-style: none;
   }
+
+  .conteiner {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .conteiner {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
