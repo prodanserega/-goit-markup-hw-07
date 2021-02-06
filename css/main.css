@@ -519,13 +519,6 @@ h3 {
           justify-content: center;
 }
 
-.portfolio-header {
-  border-bottom: 1px solid #ececec;
-  display: block;
-}
-
-/*------------------------------------------команда-------------------------------------*/
-/*--------------------------------Клієнти--------------------------------*/
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -572,9 +565,16 @@ h3 {
   fill: #afb1b8;
 }
 
-.client-link:hover,
+.client-link:hover, .client-link:focus {
+  border-color: 1px solid #2196f3;
+  color: #2196f3;
+  outline: none;
+  fill: #2196f3;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .logotype:hover,
-.client-link:focus,
 .logotype:focus {
   border-color: 1px solid #2196f3;
   color: #2196f3;
@@ -584,7 +584,6 @@ h3 {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*-------------------------------Footer------------------------------------*/
 .footer {
   background-color: #2f303a;
   font-size: 14px;
@@ -594,7 +593,19 @@ h3 {
 }
 
 .conteiner-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.conteiner-contacts {
   display: block;
+  width: 231px;
+  margin-right: 70px;
+  padding: 0;
 }
 
 .logo {
@@ -647,12 +658,6 @@ h3 {
           justify-content: center;
 }
 
-.conteiner-logo {
-  width: 231px;
-  margin-right: 70px;
-  padding: 0;
-}
-
 .joim-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -667,15 +672,6 @@ h3 {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-}
-
-.conteiner-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 .icon-join {
@@ -763,8 +759,16 @@ h3 {
           align-items: baseline;
 }
 
-/*-----------------------------Портфолио--------------------------------*/
-/*-------------------------------------------кнопки------------------------------------------------*/
+.portfolio-main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio-header {
+  border-bottom: 1px solid #ececec;
+  display: block;
+}
+
 .conteiner-button {
   margin-left: auto;
   margin-right: auto;
@@ -800,12 +804,23 @@ h3 {
   border-style: none;
 }
 
-.button-portfolio:hover,
-.button-portfolio:focus {
+.button-portfolio:hover, .button-portfolio:focus {
   color: #ffffff;
   background-color: #2196f3;
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.conteiner-foto {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.conteiner-text {
+  padding: 20px 24px;
 }
 
 .text-portfolio {
@@ -845,20 +860,6 @@ h3 {
           box-sizing: border-box;
 }
 
-.link-portfolio:hover,
-.link-portfolio:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  outline: none;
-  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-portfolio {
-  display: block;
-  text-decoration: none;
-}
-
 .foto-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -867,30 +868,17 @@ h3 {
   margin-bottom: 0;
 }
 
-.conteiner-foto {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+.link-portfolio {
+  display: block;
+  text-decoration: none;
 }
 
-.conteiner-text {
-  padding: 20px 24px;
-}
-
-.logo-footer {
-  font-family: "Raleway";
-  font-style: 500;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
-
-.portfolio-main {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.link-portfolio:hover, .link-portfolio:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-portfolio:hover .overlay,
@@ -977,6 +965,12 @@ h3 {
   fill: #2196f3;
 }
 
+.form-conteiner {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
 .modal-text {
   margin-bottom: 12px;
   margin-top: 40px;
@@ -987,12 +981,6 @@ h3 {
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: #212121;
-}
-
-.form-conteiner {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 20px;
 }
 
 .imput-modal {
@@ -1013,6 +1001,15 @@ h3 {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.imput-modal:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+
+.imput-modal:focus + .icon-modal {
+  fill: #2196f3;
+}
+
 .imput-conteiner {
   position: relative;
 }
@@ -1031,15 +1028,6 @@ h3 {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 18px;
   height: 18px;
-}
-
-.imput-modal:focus {
-  border-color: #2196f3;
-  outline: none;
-}
-
-.imput-modal:focus + .icon-modal {
-  fill: #2196f3;
 }
 
 .textarea {
