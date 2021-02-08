@@ -379,7 +379,22 @@ ul {
   padding-bottom: 94px;
 }
 
-.our-team {
+.team .team-hero {
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+
+.team .team-hero:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team .our-team {
   color: #212121;
   font-style: normal;
   font-weight: 700;
@@ -389,7 +404,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-h3 {
+.team h3 {
   color: #212121;
   font-weight: 700;
   font-size: 14px;
@@ -398,7 +413,7 @@ h3 {
   text-transform: uppercase;
 }
 
-.text {
+.team .text {
   color: #757575;
   font-style: normal;
   font-weight: 400;
@@ -406,23 +421,6 @@ h3 {
   line-height: 1.7;
   letter-spacing: 0.03em;
   padding-bottom: 16px;
-}
-
-.team-hero {
-  width: 270px;
-  margin-left: auto;
-  margin-right: auto;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  background: url(4853.jpg);
-  border-radius: 0px;
-  text-align: center;
-}
-
-.team-hero:not(:last-child) {
-  margin-right: 30px;
 }
 
 .name {
@@ -524,6 +522,32 @@ h3 {
   padding-bottom: 94px;
 }
 
+.clients .client-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.clients .client-link:hover, .clients .client-link:focus {
+  border-color: 1px solid #2196f3;
+  color: #2196f3;
+  outline: none;
+  fill: #2196f3;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .client-title {
   font-weight: 700;
   font-size: 36px;
@@ -546,42 +570,6 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 50px;
-}
-
-.client-link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  fill: #afb1b8;
-}
-
-.client-link:hover, .client-link:focus {
-  border-color: 1px solid #2196f3;
-  color: #2196f3;
-  outline: none;
-  fill: #2196f3;
-  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logotype:hover,
-.logotype:focus {
-  border-color: 1px solid #2196f3;
-  color: #2196f3;
-  outline: none;
-  fill: #2196f3;
-  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -846,7 +834,6 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 94px;
 }
 
 .foto-item {

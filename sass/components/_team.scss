@@ -2,6 +2,20 @@
     background: $secondary-bgc;
     padding-top: 94px;
     padding-bottom: 94px;
+
+    .team-hero {
+      width: 270px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $bgc-accent-text-color;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      text-align: center;
+  
+     &:not(:last-child) {
+          margin-right: 30px;
+        }
   }
   .our-team {
     color: $main-text-color;
@@ -32,21 +46,7 @@
     padding-bottom: 16px;
   }
   
-  .team-hero {
-    width: 270px;
-    margin-left: auto;
-    margin-right: auto;
-    background: $bgc-accent-text-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    background: url(4853.jpg);
-    border-radius: 0px;
-    text-align: center;
-
-   &:not(:last-child) {
-        margin-right: 30px;
-      }
+ 
 
   }
   .name {
